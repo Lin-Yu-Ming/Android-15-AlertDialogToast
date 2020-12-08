@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121010"
+    android:backgroundTint="#100F0F"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AlertDialogleandToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Hw15_title"
+        android:textColor="#FDF6F6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Toast"
+        style="@android:style/Widget.Button"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="79dp"
+        android:onClick="btn_toast"
+        android:text="@string/Hw15_ToastMsg"
+        android:textColor="#3A4CAA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AlertDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AlertDialogleandToast" />
+
+    <Button
+        android:id="@+id/AlertDialog"
+        style="@android:style/Widget.Button"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="353dp"
+        android:onClick="btn_alertDialog"
+        android:text="@string/Hw15_AlertDialog"
+        android:textColor="#3A4CAA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toast" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
